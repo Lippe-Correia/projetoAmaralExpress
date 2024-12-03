@@ -1,0 +1,100 @@
+nav{
+    background-color: #dfa026;
+    margin: 0px auto;
+    height: 130px;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: -89px; /* Inicialmente fora da tela */
+    transition: top 0.3s;
+    padding: -15px;
+}
+nav div#Botton{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 90px;
+    padding: 0% 5% 0% 5%;
+}
+.head{
+    display: inline-block;
+    padding: 12px 25px;
+    transition: 0.3s ease;
+    position: relative;
+    border-radius: 9px;
+    top: -15px;
+    width: 80px;
+}
+.head:hover{
+    background-color: #a5781f;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#Botton a{
+    text-decoration: none;
+    color: hsl(0, 3%, 12%);
+    position: relative;
+}
+#Botton a:hover {
+    color: #f7f7f7; /* Muda a cor do texto ao passar o mouse */
+}
+
+#Botton a::after {
+    content: '';
+    position: absolute;
+    left: 9px;
+    bottom: 8px;
+    width: 0px;
+    height: 2px;
+    background-color: #dbd9d8;
+    transition: width 0.2s ease-in-out;
+}
+
+#Botton a:hover::after {
+    width: 80%;
+}
+
+div#Botton a{
+    list-style-type: none;
+    display: inline;
+    gap: 25px;
+}
+
+div#Botton a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+
+
+}
+
+nav:hover{
+    top: 0; /* Quando passar o mouse, a barra desce */
+}
+
+span.tel{
+    transform: translate(30px, 45px);
+    display: inline-block;
+    justify-content: start;
+    width: 160px;
+    height: auto;
+}
+
+span.email{
+    transform: translate(1vw, 45px);
+    display: inline-block;
+    justify-content: end;
+    width: 350px;
+    height: auto;
+}
+
+span.email .icone{
+    width: 25px;
+}
+.arrw{
+    transform: translate(-37dvw, 5.5dvh);
+}
+
